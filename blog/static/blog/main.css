@@ -30,3 +30,19 @@ ul {
   border: 1px solid #dddddd;
   border-radius: 3px;
 }
+
+.profile-container {
+  display: flex;
+}
+
+.profile-img {
+  width: 125px;
+  height: 125px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.profile-heading {
+  font-size: 20px;
+  text-transform: capitalize;
+}

@@ -1,4 +1,12 @@
 {% extends 'blog/base.html' %} {% load crispy_forms_tags %} {% block content %}
-<h1>{{ user.username }}</h1>
+<div class="content-section">
+  <div class="media profile-container" tyle="display: flex">
+    <img class="profile-img" src="{{user.profile.image.url}}" alt="profile" />
+    <div class="media-body">
+      <h5 class="profile-heading">{{user.username}}</h5>
+      <p class="text-muted">{{user.email}}</p>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
