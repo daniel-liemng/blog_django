@@ -6,7 +6,9 @@
       src="{{object.author.profile.image.url}}"
       alt="profile"
     />
-    <a href="#">{{ object.author }}</a>
+    <a href="{% url 'user-posts' object.author.username %}"
+      >{{ object.author }}</a
+    >
     <small class="text-muted">{{ object.date_posted|date:"F d, Y"}}</small>
     {% if object.author == user %}
     <div>
